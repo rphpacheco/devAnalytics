@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+    <head>
+        <title>DevAnalytics</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/assets/css/deps.min.css" rel="stylesheet">
+        <link href="/assets/css/app.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="nav-md" ng-include="'/template/header/header.html'"></header>
+        <!--<aside class="x-panel" ng-include="'/template/menu/menu.html'"></aside>-->
+        <div class="container body" ui-view></div>
+        <footer ng-include="'/template/footer/footer.html'"></footer>
+        <script src="/assets/js/deps.min.js"></script>
+        <script src="/assets/js/app.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "backend for the devAnalytics application.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "prod": "pm2 start indev.js --name backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rphpacheco/devAnalytics.git"
+  },
+  "keywords": [
+    "app",
+    "webapplication",
+    "javascript",
+    "nodejs",
+    "angular",
+    "webapp"
+  ],
+  "author": "Raphael Pacheco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rphpacheco/devAnalytics/issues"
+  },
+  "homepage": "https://github.com/rphpacheco/devAnalytics#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-query-int": "^1.0.1",
+    "jsonwebtoken": "^7.4.1",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.11.3",
+    "mongoose-paginate": "^5.0.3",
+    "node-restful": "^0.2.6"
+  }
+}
