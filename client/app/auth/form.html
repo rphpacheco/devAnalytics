@@ -1,0 +1,27 @@
+<div class="container" ng-controller="AuthCtrl as auth">
+    <form class="col-lg-4 col-lg-offset-4 auth-form">
+        <img class="list-image" src="/assets/imgs/DevAnalytics.png" alt="">
+        <h4 class="text-center">Bem vindo!</h4>
+        <auth-field id="authName" model="auth.user.name" type="input" placeholder="Informe o Nome" hide="auth.loginMode"></auth-field>
+        <auth-field id="authEmail" model="auth.user.email" type="email" placeholder="Informe o E-mail"></auth-field>
+        <auth-field id="authPass" model="auth.user.password" type="password" placeholder="Informe a Senha"></auth-field>
+        <auth-field id="authConfirmPass" model="auth.user.confirm_password" type="password" placeholder="Confirme a Senha" hide="auth.loginMode"></auth-field>
+        <div class="row">
+            <div class="col-sm-4">
+                <button class="btn btn-primary btn-block btn-flat" ng-click="auth.login()" ng-show="auth.loginMode">Entrar</button>
+                <button class="btn btn-primary btn-block btn-flat" ng-click="auth.signup()" ng-hide="auth.loginMode">Registrar</button>
+            </div>
+        </div>
+        <br />
+        <a href="javascript:;" ng-click="auth.changeMode()">
+            {{ auth.loginMode ?
+                'Novo usuário? Registrar aqui!' :
+                'Já é cadastrado? Entrar aqui' }}
+        </a>
+    </form>
+</div>
+<style>
+    body {
+        background-color: #1E8BC3;
+    }
+</style>

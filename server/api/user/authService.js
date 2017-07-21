@@ -72,6 +72,7 @@ const signup = (req, res, next) => {
                 if(err) {
                     return sendErrorsFromDB(res, err)
                 } else {
+                    console.log(res)
                     login(req, res, next)
                 }
             })

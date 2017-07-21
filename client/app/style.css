@@ -17,10 +17,10 @@
 
         .navbar-header .sb-application-list-image {
             position: relative;
-            margin: 0px 0px 0px -10px;
+            margin: 0px 0px 0px 0px;
             padding: 2px;
-            top: 5px;
-            width: 50px;
+            top: 10px;
+            width: 150px;
         }
 
         .navbar-inverse .navbar-nav>li>a {
@@ -91,7 +91,7 @@
 
         .o-sidebar {
             position: fixed;
-            top: 61px;
+            top: 60px;
             width: 65px;
             height: 100%;
             background-color: #eeeff5;
@@ -129,7 +129,7 @@
         @media(max-width: 768px) {
             .o-sidebar {
                 position: fixed;
-                top: 51px;
+                top: 50px;
                 width: 65px;
                 height: 100%;
                 background-color: #eeeff5;
@@ -137,12 +137,23 @@
             }
             .navbar-header .sb-application-list-image {
                 position: relative;
-                margin: -3px 0px 0px 5px;
+                margin: -3px 0px 0px 13px;
                 padding: 2px;
-                top: 5px;
-                width: 48px;
+                top: 8px;
+                width: 150px;
             }
             .navbar-collapse>ul {
                 float: left;
             }
+        }
+        /* CSS Form Login */
+        .list-image {
+            width: 100%;
+        }
+        .auth-form {
+            margin-top: 10rem;
+            background-color: #fff;
+            box-shadow: 1px 2px 15px -2px rgba(0,0,0,.8);
+            padding: 3rem;
+            border-radius: .5rem;
         }

@@ -1,2 +1,2 @@
 const mongoose = require('mongoose')
-module.exports = mongoose.createConnection('mongodb://localhost/db_devanalytics')
+module.exports = mongoose.connect('mongodb://localhost/db_devanalytics')

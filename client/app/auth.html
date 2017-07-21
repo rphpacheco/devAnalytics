@@ -8,13 +8,7 @@
         <link href="/assets/css/app.min.css" rel="stylesheet">
     </head>
     <body>
-        <header class="nav-md" ng-include="'/template/header/header.html'" ng-controller="AuthCtrl as auth"></header>
-        <div class="container-fluid">
-            <div class="row">
-                <aside class="x-panel" ng-include="'/template/menu/menu.html'"></aside>
-                <div class="container body" ui-view></div>
-            </div>
-        </div>
+        <div class="wrapper" ng-include="'/auth/form.html'"></div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script>
             window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')

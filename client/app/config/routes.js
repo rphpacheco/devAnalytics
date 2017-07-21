@@ -15,10 +15,10 @@
             })*/
 
             $urlRouterProvider.otherwise('/home')
-            //$httpProvider.interceptors.push('handleResponseError')
+            $httpProvider.interceptors.push('handleResponseError')
         }
     ])
-    /*.run([
+    .run([
         '$rootScope',
         '$http',
         '$location',
@@ -42,12 +42,12 @@
                         } else {
                             user.isValid = true
                             $http.defaults.headers.common.Authorization = user.token
-                            isAuthPage ? $window.location.href = '/' : $location.path('/dashboard')
+                            isAuthPage ? $window.location.href = '/' : $location.path('/')
                         }
                     })
                 }
             }
         }
-    ])*/
+    ])
 
 })()

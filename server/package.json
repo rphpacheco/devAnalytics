@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
-    "prod": "pm2 start indev.js --name backend"
+    "prod": "pm2 start index.js --name backend"
   },
   "repository": {
     "type": "git",
